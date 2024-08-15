@@ -1,0 +1,114 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ReportActivity">
+
+    <!-- Location Input -->
+
+    <!-- Description Input -->
+
+    <!-- Capture Button -->
+    <!-- TextView untuk menampilkan koordinat -->
+
+    <TextView
+        android:id="@+id/coordinateTextView"
+        android:layout_width="385dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="16dp"
+        android:text="Lat: , Long: "
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="372dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Lokasi"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="376dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="top"
+        android:hint="Deskripsi"
+        android:inputType="textMultiLine"
+        android:maxLines="6"
+        android:minLines="4"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_min="100dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locationInput" />
+
+    <!-- Submit Report Button -->
+    <ImageView
+        android:id="@+id/capturedImageView"
+        android:layout_width="239dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/white"
+        android:hint = "image view"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coordinateTextView" />
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/red"
+        android:text="Ambil Foto"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionInput" />
+
+    <Button
+        android:id="@+id/submitReportButton"
+        android:layout_width="249dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/red"
+        android:text="Kirim Laporan"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/captureButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

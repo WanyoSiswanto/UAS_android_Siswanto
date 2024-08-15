@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555483350483",
+    "project_id": "uasandroid-56802",
+    "storage_bucket": "uasandroid-56802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555483350483:android:e3ad9236040fbb367c5b26",
+        "android_client_info": {
+          "package_name": "com.siswanto.parkirliar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9SqkzauO9E4yeXzy6TbS4yzXR-EnSDqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
